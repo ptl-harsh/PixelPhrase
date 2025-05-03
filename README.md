@@ -48,16 +48,6 @@ Flicker8k_Dataset/       #  Flickr8k images
 └── Flickr8k.token.txt    # Captions file
 ```
 
-we had run the notebook script to automate this:
-
-```bash
-wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
-wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip
-unzip -qq Flickr8k_Dataset.zip
-unzip -qq Flickr8k_text.zip
-rm Flickr8k_Dataset.zip Flickr8k_text.zip
-```
-
 ---
 
 ## Model Architecture
