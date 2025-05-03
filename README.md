@@ -76,17 +76,17 @@ rm Flickr8k_Dataset.zip Flickr8k_text.zip
 
 ---
 
-# Attention Mechanisms
+### Attention Mechanisms
 
 This model leverages two key attention types within the Transformer blocks:
 
-## Multi-Head Self-Attention (in both encoder and decoder)
+#### Multi-Head Self-Attention (in both encoder and decoder)
 
 - Allows each position in the input sequence (tokens or spatial features) to attend to all other positions.
 - Calculates attention weights by projecting inputs into queries, keys, and values, then computing scaled dot-product attention across multiple heads.
 - Heads learn diverse representation subspaces, enhancing model capacity.
 
-## Encoder–Decoder Cross-Attention (in decoder only)
+#### Encoder–Decoder Cross-Attention (in decoder only)
 
 - Enables the decoder to focus on relevant parts of the image representation when generating each output token.
 - The decoder’s queries come from the previous layer’s output, while keys and values come from the encoder’s output.
