@@ -145,3 +145,6 @@ After training, you should obtain:
 - Saved plots and metrics (optionally stored under `outputs/`)
 
 ---
+
+![screenshot](results/image1.png)
+![screenshot](results/image2.png)
