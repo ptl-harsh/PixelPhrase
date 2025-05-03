@@ -146,6 +146,6 @@ After training, you should obtain:
 
 ---
 
+![screenshot](results/result.png)
 ![screenshot](results/image1.png)
 ![screenshot](results/image2.png)
-![screenshot](results/result.png)
