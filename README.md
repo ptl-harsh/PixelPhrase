@@ -41,14 +41,14 @@ pip install tensorflow numpy matplotlib nltk
 
 ## Dataset
 
-Download and extract the Flickr8k dataset, which consists of images and captions:
+The Flickr8k dataset, which consists of images and captions:
 
 ```
-Flicker8k_Dataset/       # Downloaded Flickr8k images
+Flicker8k_Dataset/       #  Flickr8k images
 └── Flickr8k.token.txt    # Captions file
 ```
 
-Or run the notebook script to automate this:
+we had run the notebook script to automate this:
 
 ```bash
 wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
@@ -73,6 +73,24 @@ rm Flickr8k_Dataset.zip Flickr8k_text.zip
 4. **ImageCaptioningModel**:
    - Integrates CNN features, encoder, decoder
    - Implements custom training (`train_step`) and testing (`test_step`) loops for handling multiple captions per image
+
+---
+
+# Attention Mechanisms
+
+This model leverages two key attention types within the Transformer blocks:
+
+## Multi-Head Self-Attention (in both encoder and decoder)
+
+- Allows each position in the input sequence (tokens or spatial features) to attend to all other positions.
+- Calculates attention weights by projecting inputs into queries, keys, and values, then computing scaled dot-product attention across multiple heads.
+- Heads learn diverse representation subspaces, enhancing model capacity.
+
+## Encoder–Decoder Cross-Attention (in decoder only)
+
+- Enables the decoder to focus on relevant parts of the image representation when generating each output token.
+- The decoder’s queries come from the previous layer’s output, while keys and values come from the encoder’s output.
+- Guides token generation using visual context.
 
 ---
 
