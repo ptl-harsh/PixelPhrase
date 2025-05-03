@@ -105,7 +105,7 @@ The Jupyter notebook (`notebooks/train.ipynb`) demonstrates the end-to-end proce
 Run the training script:
 
 ```bash
-python src/train.py
+PixelPhrase.ipynb
 ```
 
 Key hyperparameters:
