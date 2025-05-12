@@ -146,6 +146,14 @@ After training, you should obtain:
 
 ---
 
+## Summary 
+
+This project involved designing and implementing an end-to-end image-captioning system on the Flickr8k dataset by leveraging a pre-trained EfficientNet-B0 backbone for feature extraction and custom Transformer encoder–decoder blocks with self- and cross-attention for sequence modeling; preprocessing of both images and text was performed, the network was trained end-to-end, and performance was optimized using BLEU-4 scoring—ultimately achieving a score of 0.67—sharpening skills in deep learning, NLP, and Python while demonstrating how to fine-tune complex multimodal architectures for real-world applications.
+
+---
+
+
+
 ![screenshot](results/result.png)
 ![screenshot](results/image1.png)
 ![screenshot](results/image2.png)
